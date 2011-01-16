@@ -1,0 +1,23 @@
+Create a ruby program which will accept a string of text as an input from command line and search for the pattern in current working directory. There can be any level of subdirectories in current directory. You can choose to use grep or implement your own text search in ruby. Output should be in the following form (all names used here are fictional).
+
+./foo_search.rb "foobar"
+File ./a/b/c/a.rb : 10
+File ./c/g/t/foo.js : 20
+File ./aaa.rb : 30
+
+When correct parameters are not supplied in the command line, program should read input from the user.
+
+Output: (At my machine)
+On using the Search String as : "a"
+
+apoorv@My-Machine:~/Adomado$ ruby Solution.rb "a"
+"File: /home/apoorv/Adomado/Solution.rb : 36"
+"File: /home/apoorv/Adomado/2/1/2/3/Testfile.txt : 5"
+"File: /home/apoorv/Adomado/2/1/2/Testfile.txt : 5"
+"File: /home/apoorv/Adomado/2/1/Testfile.txt : 5"
+"File: /home/apoorv/Adomado/2/3/Testfile.txt : 5"
+"File: /home/apoorv/Adomado/2/Testfile.txt : 5"
+"File: /home/apoorv/Adomado/1/2/3/Testfile.txt : 5"
+"File: /home/apoorv/Adomado/1/2/Testfile.txt : 5"
+"File: /home/apoorv/Adomado/1/Testfile.txt : 5"
+"File: /home/apoorv/Adomado/Question : 34"
